@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PaymentSDKAndroid</string>
+    <string name="amount">Amount</string>
+    <string name="continuation">Continue</string>
+</resources>
