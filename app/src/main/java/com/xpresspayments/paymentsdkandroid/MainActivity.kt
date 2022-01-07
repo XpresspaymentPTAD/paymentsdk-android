@@ -13,7 +13,7 @@ import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var amountLayout: TextInputLayout
+    var amountLayout: TextInputLayout? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,11 +23,11 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.btn_continue).setOnClickListener {
 
-            val amount = amountLayout.editText?.text?.trim().toString()
+            val amount = amountLayout?.editText?.text?.trim().toString()
             if(amount.isEmpty()){
-                amountLayout.error = "Amount can not be empty"
+                amountLayout?.error = "Amount can not be empty"
             } else {
-                amountLayout.error = null
+                amountLayout?.error = null
                 pay(amount.toDouble())
             }
         }
@@ -42,18 +42,18 @@ class MainActivity : AppCompatActivity() {
         val initialisePayment = InitialisePayment(
             (date.time + transactionId).toString(),
             amount,
-            "emailhere@gmail.com",
-            "yourpublickeyhere",
+            "adegbitefemisamson@gmail.com",
+            "XPPUBK-e634d14d9ded04eaf05d5b63a0a06d2f-X",
             false
         )
 
         Xpay(this).transact(initialisePayment, object :
             OnTransactionListener {
-            override fun onSuccess(transaction: Transaction) {
+            override fun onSuccess(transaction: Transaction?) {
                 Log.d("MainActivity", "result: $transaction")
             }
 
-            override fun onError(throwable: Throwable, transaction: Transaction) {
+            override fun onError(throwable: Throwable, transaction: Transaction?) {
                 Log.d("MainActivity", "error: $throwable")
             }
         })
