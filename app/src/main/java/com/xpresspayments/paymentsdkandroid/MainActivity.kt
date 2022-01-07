@@ -42,8 +42,8 @@ class MainActivity : AppCompatActivity() {
         val initialisePayment = InitialisePayment(
             (date.time + transactionId).toString(),
             amount,
-            "adegbitefemisamson@gmail.com",
-            "XPPUBK-e634d14d9ded04eaf05d5b63a0a06d2f-X",
+            "yourvalidemail@mail.com",
+            "yourpublickey",
             false
         )
 

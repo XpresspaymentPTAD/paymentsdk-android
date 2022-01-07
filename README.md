@@ -21,7 +21,7 @@ Add the dependency to your app build.gradle and build.
 
 ```
  dependencies {
-     implementation 'com.github.XpresspaymentPTAD:payment-gateway-android:1.0.2'
+     implementation 'com.github.XpresspaymentPTAD:payment-gateway-android:1.0.3'
  }
 
 ```
@@ -57,4 +57,16 @@ private void pay() {
         });
     }
 
+```
+
+##Test
+
+so we provide test cards for your use instead of using your own debit/credit cards.
+
+```
+5399 8300 0000 0008
+MM/YY: 05/30
+CVV: 000
+PIN: 1234
+TOKEN: 123456
 ```
