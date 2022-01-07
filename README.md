@@ -59,9 +59,9 @@ private void pay() {
 
 ```
 
-##Test
+## Test
 
-so we provide test cards for your use instead of using your own debit/credit cards.
+We provide test card for your use instead of using your own debit/credit cards.
 
 ```
 5399 8300 0000 0008
