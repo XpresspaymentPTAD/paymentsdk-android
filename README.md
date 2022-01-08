@@ -1,10 +1,11 @@
 ## Xpresspayments Android
 
-This is a library for easy integration of [Xpresspayments](https://https://www.xpresspayments.com.com) with your Android application.
+This is a library for easy integration of [Xpresspayments](https://https://www.xpresspayments.com.com) payment gateway with your Android application.
 
 ## Get Started
 
-#Step 1
+###### Step 1
+
 Add the JitPack repository to your root build.gradle at the end of repositories.
 
 ```
@@ -15,7 +16,7 @@ allprojects {
 }
 ```
 
-#Step 2
+###### Step 2
 
 Add the dependency to your app build.gradle and build.
 
@@ -26,7 +27,7 @@ Add the dependency to your app build.gradle and build.
 
 ```
 
-## Sample Function Request and Responses
+## Sample Function Request
 
 To start the transaction, you'll need to pass information such as transactionId, amount, email, publicKey, etc. Public key, Email and amount are required and must be valid.
 
