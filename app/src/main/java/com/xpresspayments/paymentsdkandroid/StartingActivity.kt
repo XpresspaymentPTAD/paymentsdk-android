@@ -11,20 +11,20 @@ import com.xpresspayments.paymentsdk.api.model.InitialisePayment
 import com.xpresspayments.paymentsdk.entity.Transaction
 import java.util.*
 
-class MainActivity : AppCompatActivity() {
+class StartingActivity : AppCompatActivity() {
 
     var amountLayout: TextInputLayout? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_starting)
 
         amountLayout = findViewById(R.id.edl_amount)
 
         findViewById<Button>(R.id.btn_continue).setOnClickListener {
 
             val amount = amountLayout?.editText?.text?.trim().toString()
-            if(amount.isEmpty()){
+            if (amount.isEmpty()) {
                 amountLayout?.error = "Amount can not be empty"
             } else {
                 amountLayout?.error = null
