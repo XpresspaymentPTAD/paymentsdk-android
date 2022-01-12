@@ -22,7 +22,7 @@ Add the dependency to your app build.gradle and build.
 
 ```
  dependencies {
-     implementation 'com.github.XpresspaymentPTAD:payment-gateway-android:1.0.6'
+     implementation 'com.github.XpresspaymentPTAD:payment-gateway-android:1.0.4'
  }
 
 ```
