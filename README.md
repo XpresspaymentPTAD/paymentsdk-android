@@ -36,9 +36,10 @@ This repository contain a kotlin sample. here is a java sample:
 ```
 private void pay() {
         Date date =  new Date();
-        int transactionId = (int) Math.floor(Math.random() * 1000000);
+        int key = (int) Math.floor(Math.random() * 1000000);
+        String transactionId = String.valueOf(date.getTime() + transactionId);
         InitialisePayment initialisePayment = new InitialisePayment(
-                String.valueOf(date.getTime() + transactionId),
+                transactionId,
                 1000,
                 "yourvalidemail@mail.com",
                 "yourpublickey",
